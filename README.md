@@ -15,17 +15,23 @@ This plugin offers an interface from XL Release to Jenkins 2.x.
 [xlr-jenkins2-plugin-code-climate-image]: https://codeclimate.com/github/xebialabs-community/xlr-jenkins2-plugin/badges/gpa.svg
 [xlr-jenkins2-plugin-code-climate-url]: https://codeclimate.com/github/xebialabs-community/xlr-jenkins2-plugin
 
+# Installation #
++ Place the `jar` file under plugins.
++ Remark: Starting v1.1.0, XLR v6.1.0+ is required.
+
 # Usage #
-* Trigger: You can configure a trigger by first going to your template and selecting `Triggers`
++ Trigger: You can configure a trigger by first going to your template and selecting `Triggers`
   ![Jenkins Trigger](images/jenkins_trigger.png)
   
   When selected, you can provide the Jenkins details.
   ![Jenkins Trigger Details](images/jenkins_trigger_details.png)
-
-* Tile 
-
-* Tasks Jenkins.GetBuildParameters tasks allows to fetch the parameters from an executed job.
- ![Jenkins GetBuildParameters](images/jenkins_get_parameters.png) 
+  
++ Tile: To be done. 
++ Tasks 
+    + Jenkins.GetBuildParameters tasks allows to fetch the parameters from an executed job.
+      ![Jenkins GetBuildParameters](images/jenkins_get_parameters.png)
+    + Jenkins.Build: The Jenkins build task is being extended with the following property
+        + `ignoreFailure`: If true, XL Release will not fail the task if the Jenkins job fails.
 
 # Testing and Development #
 If you want to start this plugin, you could use the following command `./gradlew runDockerCompose`. 

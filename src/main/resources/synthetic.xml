@@ -38,4 +38,13 @@
     </type>
 
 
+    <type-modification type="jenkins.Build">
+        <property name="ignoreFailure" category="input" kind="boolean" description="If true, XL Release will not fail the task if the Jenkins job fails."/>
+    </type-modification>
+
+    <type-modification type="jenkins.Server">
+        <property name="pollInterval" kind="integer" default="10" hidden="true" />
+    </type-modification>
+
+
 </synthetic>
